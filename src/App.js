@@ -39,7 +39,12 @@ export default class App extends React.PureComponent {
         <div className="columns">
           <div className="column is-one-fifth">
             <nav>
-              {App.users.map(user => <User name={user} key={user} onSelect={() => this.handleUserSelect(user)} />)}
+              {App.users.map(user => <User
+                name={user}
+                key={user}
+                active={user === this.state.user}
+                onSelect={() => this.handleUserSelect(user)}
+              />)}
             </nav>
           </div>
           <div className="column">

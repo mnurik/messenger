@@ -7,3 +7,7 @@
   height: 60vh;
   overflow: auto;
 }
+
+.active {
+  background-color: rgba(0, 0, 0, .05);
+}
